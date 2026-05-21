@@ -392,6 +392,9 @@ nav {
 
 /* ── FOOTER ─────────────────────────────────────────────── */
 footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border-top: 1px solid var(--border);
   padding: 2.5rem 2rem;
   text-align: center;
