@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- CHANGE: Update the title -->
+  <title>Blog — Your Name</title>
+  <meta name="description" content="Writing and thoughts from Your Name." />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ════════════════════════════════════════════════
+       NAVIGATION — same on every page
+       CHANGE: Replace "Your Name" with your actual name
+       ════════════════════════════════════════════════ -->
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Your Name</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="page">
+
+    <!-- ════════════════════════════════════════════════
+         PAGE HEADER
+         CHANGE: Update subtitle if you like
+         ════════════════════════════════════════════════ -->
+    <header class="page-header">
+      <span class="label">Blog</span>
+      <h1>Writing &amp; thoughts.</h1>
+      <!-- CHANGE: optional subtitle -->
+      <p>Ideas on design, creativity, and the work behind the work.</p>
+    </header>
+
+    <!-- ════════════════════════════════════════════════
+         BLOG POST LIST
+         HOW TO ADD A POST:
+           1. Duplicate one of the <a class="blog-item"> blocks below
+           2. Update the href to point to your new post file
+              e.g. href="posts/my-new-post.html"
+           3. Update the image, date, category, title and excerpt
+           4. Save the new post file (use blog-post-template.html as a starting point)
+
+         NEWEST POST should be at the TOP of the list.
+
+         HOW TO ADD AN IMAGE:
+           Replace <div class="placeholder">Add image</div> with:
+           <img src="../images/post-thumbnail.jpg" alt="Post title" />
+         ════════════════════════════════════════════════ -->
+    <div class="blog-list">
+
+      <!-- ── POST 1 (most recent) ── -->
+      <a class="blog-item" href="posts/post-title-one.html">
+        <div class="blog-thumb">
+          <!-- CHANGE: Replace with your post thumbnail image -->
+          <div class="placeholder" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:.75rem;color:#6B6860;">Add image</div>
+          <!-- <img src="images/post1-thumb.jpg" alt="Post title one" /> -->
+        </div>
+        <div>
+          <div class="blog-meta">
+            <!-- CHANGE: Date and category for this post -->
+            <span class="blog-date">12 June 2025</span>
+            <span class="blog-category">Design</span>
+          </div>
+          <!-- CHANGE: Post title -->
+          <h2 class="blog-title">Your Post Title Goes Here</h2>
+          <!-- CHANGE: A one or two sentence excerpt from the post -->
+          <p class="blog-excerpt">
+            A short summary or opening line from this blog post that
+            gives readers a reason to click through and read more.
+          </p>
+        </div>
+      </a>
+
+      <!-- ── POST 2 ── -->
+      <a class="blog-item" href="posts/post-title-two.html">
+        <div class="blog-thumb">
+          <div class="placeholder" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:.75rem;color:#6B6860;">Add image</div>
+          <!-- <img src="images/post2-thumb.jpg" alt="Post title two" /> -->
+        </div>
+        <div>
+          <div class="blog-meta">
+            <span class="blog-date">3 May 2025</span>
+            <span class="blog-category">Process</span>
+          </div>
+          <h2 class="blog-title">Another Post Title Here</h2>
+          <p class="blog-excerpt">
+            A short summary or opening line from this blog post that
+            gives readers a reason to click through and read more.
+          </p>
+        </div>
+      </a>
+
+      <!-- ── POST 3 ── -->
+      <a class="blog-item" href="posts/post-title-three.html">
+        <div class="blog-thumb">
+          <div class="placeholder" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:.75rem;color:#6B6860;">Add image</div>
+          <!-- <img src="images/post3-thumb.jpg" alt="Post title three" /> -->
+        </div>
+        <div>
+          <div class="blog-meta">
+            <span class="blog-date">18 March 2025</span>
+            <span class="blog-category">Reflection</span>
+          </div>
+          <h2 class="blog-title">A Third Post Title Here</h2>
+          <p class="blog-excerpt">
+            A short summary or opening line from this blog post that
+            gives readers a reason to click through and read more.
+          </p>
+        </div>
+      </a>
+
+      <!-- COPY/PASTE more blog items here -->
+
+    </div><!-- end .blog-list -->
+
+  </main>
+
+  <!-- ════════════════════════════════════════════════
+       FOOTER — CHANGE email and social links
+       ════════════════════════════════════════════════ -->
+  <footer>
+    <p>
+      <a href="mailto:you@email.com">you@email.com</a>
+      &nbsp;·&nbsp;
+      <a href="https://linkedin.com/in/yourhandle" target="_blank">LinkedIn</a>
+      &nbsp;·&nbsp;
+      <a href="https://instagram.com/yourhandle" target="_blank">Instagram</a>
+    </p>
+    <p style="margin-top:.5rem;">&copy; 2025 Your Name</p>
+  </footer>
+
+</body>
+</html>

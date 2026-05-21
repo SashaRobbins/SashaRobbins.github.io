@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- CHANGE: Update the title -->
+  <title>About — Your Name</title>
+  <meta name="description" content="About Your Name — who I am and what I do." />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ════════════════════════════════════════════════
+       NAVIGATION — same on every page
+       CHANGE: Replace "Your Name" with your actual name
+       ════════════════════════════════════════════════ -->
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Your Name</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Work</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="page">
+
+    <!-- ════════════════════════════════════════════════
+         PAGE HEADER
+         CHANGE: Update the heading and subtitle
+         ════════════════════════════════════════════════ -->
+    <header class="page-header">
+      <span class="label">About</span>
+      <h1>Hello, I'm Your Name.</h1>
+      <!-- CHANGE: One-line tagline -->
+      <p>Designer &amp; photographer based in [Your City].</p>
+    </header>
+
+    <!-- ════════════════════════════════════════════════
+         ABOUT LAYOUT — photo on left, bio on right
+         ════════════════════════════════════════════════ -->
+    <div class="about-layout">
+
+      <!-- ── PHOTO ──
+           CHANGE: Replace the placeholder with your photo.
+           1. Upload your photo to the repo (e.g. images/me.jpg)
+           2. Replace the placeholder div with:
+              <img src="images/me.jpg" alt="Your Name" />
+      -->
+      <div class="about-photo">
+        <div class="placeholder">Your photo here</div>
+        <!-- <img src="images/me.jpg" alt="Your Name" /> -->
+      </div>
+
+      <!-- ── BIO ── -->
+      <div class="about-content">
+
+        <!-- CHANGE: Replace with your own heading -->
+        <h2>A little about me.</h2>
+
+        <!-- CHANGE: Replace ALL of the paragraphs below with your own bio.
+             Keep the <p> tags — just replace the text inside them.
+             Add more <p> blocks if you need more paragraphs. -->
+
+        <p>
+          I'm a creative based in [Your City] with a background in [your field].
+          I've been working in [industry] for [X] years, helping clients and brands
+          tell their stories through [design / photography / etc.].
+        </p>
+
+        <p>
+          Before going independent, I worked at [Previous Company or Role]. I studied
+          [subject] at [institution], which gave me a foundation in [relevant skill].
+        </p>
+
+        <p>
+          When I'm not working, you'll find me [hobby / interest] or [another personal detail
+          that shows your personality].
+        </p>
+
+        <!-- ════════════════════════════════════════════════
+             SKILLS / SERVICES LIST
+             CHANGE: Replace each skill-item with your own
+             Add or remove <div class="skill-item"> as needed
+             ════════════════════════════════════════════════ -->
+        <div class="skills-grid">
+          <span class="label" style="grid-column:1/-1;margin-bottom:.25rem;">Skills &amp; Services</span>
+
+          <div class="skill-item">Brand Identity</div>
+          <div class="skill-item">Photography</div>
+          <div class="skill-item">Art Direction</div>
+          <div class="skill-item">Editorial Design</div>
+          <div class="skill-item">Visual Strategy</div>
+          <div class="skill-item">Web Design</div>
+          <!-- Add more below as needed -->
+        </div>
+
+        <!-- ════════════════════════════════════════════════
+             CONTACT LINK
+             CHANGE: Replace with your email address
+             ════════════════════════════════════════════════ -->
+        <p style="margin-top:2.5rem;">
+          Want to work together?
+          <a href="mailto:you@email.com">Get in touch →</a>
+        </p>
+
+      </div><!-- end .about-content -->
+    </div><!-- end .about-layout -->
+
+  </main>
+
+  <!-- ════════════════════════════════════════════════
+       FOOTER — CHANGE email and social links
+       ════════════════════════════════════════════════ -->
+  <footer>
+    <p>
+      <a href="mailto:you@email.com">you@email.com</a>
+      &nbsp;·&nbsp;
+      <a href="https://linkedin.com/in/yourhandle" target="_blank">LinkedIn</a>
+      &nbsp;·&nbsp;
+      <a href="https://instagram.com/yourhandle" target="_blank">Instagram</a>
+    </p>
+    <p style="margin-top:.5rem;">&copy; 2025 Your Name</p>
+  </footer>
+
+</body>
+</html>

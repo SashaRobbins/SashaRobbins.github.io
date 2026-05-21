@@ -1,7 +1,168 @@
----
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: home
-author_profile: true
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ════════════════════════════════════════════════
+       CHANGE: Update the title to your name / tagline
+       ════════════════════════════════════════════════ -->
+  <title>Your Name — Portfolio</title>
+  <meta name="description" content="Portfolio of Your Name — short description of what you do." />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ════════════════════════════════════════════════
+       NAVIGATION
+       CHANGE: Replace "Your Name" with your actual name
+       ════════════════════════════════════════════════ -->
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Your Name</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ════════════════════════════════════════════════
+       HERO / INTRO
+       CHANGE: Update the heading and subtitle
+       ════════════════════════════════════════════════ -->
+  <main class="page">
+    <header class="page-header">
+      <span class="label">Selected Work</span>
+      <h1>Design, photography<br>&amp; creative direction.</h1>
+      <!-- CHANGE: Replace the paragraph below with your own intro line -->
+      <p>A collection of projects spanning branding, editorial, and visual storytelling.</p>
+    </header>
+
+    <!-- ════════════════════════════════════════════════
+         PROJECT GRID
+         HOW TO ADD A PROJECT:
+           1. Copy one <article class="project-card"> block
+           2. Replace the image src, title, description, and tag
+           3. Paste it inside the .projects-grid div
+         HOW TO LINK A PROJECT:
+           Wrap the whole <article> in an <a href="your-link.html">
+         HOW TO ADD YOUR OWN IMAGE:
+           Put the image file in your repo folder, then set
+           src="your-image-filename.jpg"
+           Remove the <div class="placeholder"> line when you add a real image.
+         ════════════════════════════════════════════════ -->
+    <div class="projects-grid">
+
+      <!-- ── PROJECT 1 ── -->
+      <article class="project-card">
+        <div class="thumb">
+          <!-- CHANGE: Replace src with your image path, e.g. src="images/project1.jpg" -->
+          <!-- DELETE the placeholder div once you add a real image -->
+          <div class="placeholder">Add image</div>
+          <!-- <img src="images/project1.jpg" alt="Project One" /> -->
+        </div>
+        <div class="card-body">
+          <!-- CHANGE: Project title -->
+          <h2>Project Title One</h2>
+          <!-- CHANGE: Short description (1–2 sentences) -->
+          <p>A short description of this project — what it was, who it was for, and what you did.</p>
+          <!-- CHANGE: Category / type label -->
+          <span class="tag">Branding</span>
+        </div>
+      </article>
+
+      <!-- ── PROJECT 2 ── -->
+      <article class="project-card">
+        <div class="thumb">
+          <div class="placeholder">Add image</div>
+          <!-- <img src="images/project2.jpg" alt="Project Two" /> -->
+        </div>
+        <div class="card-body">
+          <h2>Project Title Two</h2>
+          <p>A short description of this project — what it was, who it was for, and what you did.</p>
+          <span class="tag">Photography</span>
+        </div>
+      </article>
+
+      <!-- ── PROJECT 3 ── -->
+      <article class="project-card">
+        <div class="thumb">
+          <div class="placeholder">Add image</div>
+          <!-- <img src="images/project3.jpg" alt="Project Three" /> -->
+        </div>
+        <div class="card-body">
+          <h2>Project Title Three</h2>
+          <p>A short description of this project — what it was, who it was for, and what you did.</p>
+          <span class="tag">Editorial</span>
+        </div>
+      </article>
+
+      <!-- ── PROJECT 4 ── -->
+      <article class="project-card">
+        <div class="thumb">
+          <div class="placeholder">Add image</div>
+          <!-- <img src="images/project4.jpg" alt="Project Four" /> -->
+        </div>
+        <div class="card-body">
+          <h2>Project Title Four</h2>
+          <p>A short description of this project — what it was, who it was for, and what you did.</p>
+          <span class="tag">Direction</span>
+        </div>
+      </article>
+
+      <!-- ── PROJECT 5 ── -->
+      <article class="project-card">
+        <div class="thumb">
+          <div class="placeholder">Add image</div>
+          <!-- <img src="images/project5.jpg" alt="Project Five" /> -->
+        </div>
+        <div class="card-body">
+          <h2>Project Title Five</h2>
+          <p>A short description of this project — what it was, who it was for, and what you did.</p>
+          <span class="tag">Branding</span>
+        </div>
+      </article>
+
+      <!-- ── PROJECT 6 ── -->
+      <article class="project-card">
+        <div class="thumb">
+          <div class="placeholder">Add image</div>
+          <!-- <img src="images/project6.jpg" alt="Project Six" /> -->
+        </div>
+        <div class="card-body">
+          <h2>Project Title Six</h2>
+          <p>A short description of this project — what it was, who it was for, and what you did.</p>
+          <span class="tag">Photography</span>
+        </div>
+      </article>
+
+      <!-- COPY/PASTE more project cards here as needed -->
+
+    </div><!-- end .projects-grid -->
+  </main>
+
+  <!-- ════════════════════════════════════════════════
+       FOOTER — CHANGE email and social links
+       ════════════════════════════════════════════════ -->
+  <footer>
+    <p>
+      <!-- CHANGE: your email -->
+      <a href="mailto:you@email.com">you@email.com</a>
+      &nbsp;·&nbsp;
+      <!-- CHANGE: your LinkedIn URL and handle -->
+      <a href="https://linkedin.com/in/yourhandle" target="_blank">LinkedIn</a>
+      &nbsp;·&nbsp;
+      <!-- CHANGE: your Instagram handle, or delete this line -->
+      <a href="https://instagram.com/yourhandle" target="_blank">Instagram</a>
+    </p>
+    <p style="margin-top:.5rem;">
+      <!-- CHANGE: your name -->
+      &copy; 2025 Your Name
+    </p>
+  </footer>
+
+</body>
+</html>
