@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Project Title — Your Name</title>
+  <title>Ghostly Allies — Sasha Robbins</title>
   <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
 
   <nav>
     <div class="nav-inner">
-      <a href="../index.html" class="nav-logo">Your Name</a>
+      <a href="../index.html" class="nav-logo">Sasha Robbins</a>
       <ul class="nav-links">
-        <li><a href="../index.html">Work</a></li>
+        <li><a href="../index.html">Projects</a></li>
         <li><a href="../about.html">About</a></li>
         <li><a href="../blog.html">Blog</a></li>
       </ul>
@@ -23,8 +23,12 @@
     <article class="post-layout">
 
       <header class="post-header">
-        <h1>Project Title</h1>
-        <p class="post-meta"><strong>Role:</strong> Gameplay Programmer &nbsp;·&nbsp; <strong>Tech:</strong> C++, Unreal Engine 5</p>
+        <h1>Ghostly Allies</h1>
+        <p class="post-meta">
+            <strong>Role:</strong> Gameplay Programmer, Designer <br>&amp; 2D Art &nbsp;·&nbsp;
+            <strong>Tech:</strong> C#, Unity &nbsp;·&nbsp;
+            <strong>Team Size:</strong> 1
+        </p>
       </header>
 
       <div class="post-hero">
@@ -35,30 +39,32 @@
 
       <div class="post-body">
         <h2>Overview</h2>
-        <p>A brief summary of the game, the scope of the project, and your specific technical contribution.</p>
+        <p>Ghostly Allies is a Single-player puzzle platformer where you can't quite complete the puzzle on the first attempt.
+          After resetting the timer a ghost like image appears, copying your exact past moves. Using this ghost,
+          you help yourself to complete the level, each adding in new features to test your mind.</p>
 
-        <h2>Key Responsibilities</h2>
+        <h2>Main Gameplay Mechanics</h2>
         <ul>
-          <li>Implemented physics-based character controller using C++.</li>
-          <li>Optimized rendering pipeline for 60FPS on target hardware.</li>
-          <li>Developed custom toolset for level designers to script encounters.</li>
+            <li>Player movement recorder; Stores coordinate information in an array over a set period of time every set seconds.
+            Updates to new recording every reset so always recording previous level attempt</li>
+            <li>Player movement re-player; Spawns a ghost player that mirrors previous actions, can move objects,
+            interact with buttons, and collide with player.</li>
         </ul>
 
         <h2>Technical Challenges</h2>
-        <p>Describe a specific technical hurdle (e.g., memory management, pathfinding AI, network synchronization) and how you solved it.</p>
+        <p>The greatest challenge which was also the main mechanic of the game was the recording and playback of the player movement.
+          Having to track all the movements of the player, and then feeding it back to copy the movements of the last attempt of the level
+          whilst the ghost player also affecting the world in the exact way you had just played the level.</p>
 
-        <blockquote>
-          "Highlight a key metric or outcome, such as reducing load times by 40% or implementing a complex systemic animation graph."
-        </blockquote>
-
+        
         <h2>Project Links</h2>
         <p>
-          <a href="#">View Source on GitHub →</a>
+            <a href="https://atrs.itch.io/ghostlyallies">View Game on Itch.io →</a>
         </p>
       </div>
 
       <p style="margin-top:3rem;padding-top:2rem;border-top:1px solid var(--border);">
-        <a href="../index.html">← Back to Work</a>
+        <a href="../index.html">← Back to Projects</a>
       </p>
 
     </article>

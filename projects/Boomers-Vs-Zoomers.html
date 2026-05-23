@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Project Title — Your Name</title>
+  <title>Boomers Vs Zoomers — Sasha Robbins</title>
   <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
 
   <nav>
     <div class="nav-inner">
-      <a href="../index.html" class="nav-logo">Your Name</a>
+      <a href="../index.html" class="nav-logo">Sasha Robbins</a>
       <ul class="nav-links">
-        <li><a href="../index.html">Work</a></li>
+        <li><a href="../index.html">Projects</a></li>
         <li><a href="../about.html">About</a></li>
         <li><a href="../blog.html">Blog</a></li>
       </ul>
@@ -23,8 +23,12 @@
     <article class="post-layout">
 
       <header class="post-header">
-        <h1>Project Title</h1>
-        <p class="post-meta"><strong>Role:</strong> Gameplay Programmer &nbsp;·&nbsp; <strong>Tech:</strong> C++, Unreal Engine 5</p>
+        <h1>Boomers Vs Zoomers</h1>
+        <p class="post-meta">
+            <strong>Role:</strong> Gameplay Programmer &nbsp;·&nbsp;
+            <strong>Tech:</strong> Lua, Roblox &nbsp;·&nbsp;
+            <strong>Team Size:</strong> 6
+        </p>
       </header>
 
       <div class="post-hero">
@@ -35,30 +39,34 @@
 
       <div class="post-body">
         <h2>Overview</h2>
-        <p>A brief summary of the game, the scope of the project, and your specific technical contribution.</p>
+        <p>Boomers Vs Zoomers is a survival multiplayer horror, loading into a round you are either the Boomer or part of the Zoomers.
+          The Boomer is the old man who has to defend his house from the Zoomer thieves who are trying to take items around the house.
+          If the timer runs out or the Boomer gets all the Zoomers he wins, however if the Zoomers
+          successfully escape with half the house value, they win.</p>
 
-        <h2>Key Responsibilities</h2>
+        <h2>Main Gameplay Mechanics</h2>
         <ul>
-          <li>Implemented physics-based character controller using C++.</li>
-          <li>Optimized rendering pipeline for 60FPS on target hardware.</li>
-          <li>Developed custom toolset for level designers to script encounters.</li>
+            <li>Round system with role assign; Server waits until a player requirement is met, assigns roles to players and teleports them into the map.
+            Server logic for disconnects or death events to handle in round logic.</li>
+            <li>Item inventory and weight; Items that can be picked up, replaced on death, slow you down as you pick up more items,
+            gain money from selling items.</li>
+            <li>Spectator Menu; Fully flushed spectator menu for lobby and dead players, Player profile thumbnail,
+            username, current role in round, switch player buttons.</li>
         </ul>
 
         <h2>Technical Challenges</h2>
-        <p>Describe a specific technical hurdle (e.g., memory management, pathfinding AI, network synchronization) and how you solved it.</p>
-
-        <blockquote>
-          "Highlight a key metric or outcome, such as reducing load times by 40% or implementing a complex systemic animation graph."
-        </blockquote>
+        <p>With this being my first Roblox project ive worked on I would have thought trying to learn the Lua language would have been the hardest
+          challenge, but in reality it was the logic behind designing the systems to run on a server-client setup as the game was designed as a
+          multiplayer game.</p>
 
         <h2>Project Links</h2>
         <p>
-          <a href="#">View Source on GitHub →</a>
+            <a href="https://www.roblox.com/games/114542850096786/Prototype-Game">View Game on Roblox →</a>
         </p>
       </div>
 
       <p style="margin-top:3rem;padding-top:2rem;border-top:1px solid var(--border);">
-        <a href="../index.html">← Back to Work</a>
+        <a href="../index.html">← Back to Projects</a>
       </p>
 
     </article>

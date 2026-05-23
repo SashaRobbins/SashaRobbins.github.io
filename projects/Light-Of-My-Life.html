@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Project Title — Your Name</title>
+  <title>Light Of My Life — Sasha Robbins</title>
   <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
 
   <nav>
     <div class="nav-inner">
-      <a href="../index.html" class="nav-logo">Your Name</a>
+      <a href="../index.html" class="nav-logo">Sasha Robbins</a>
       <ul class="nav-links">
-        <li><a href="../index.html">Work</a></li>
+        <li><a href="../index.html">Projects</a></li>
         <li><a href="../about.html">About</a></li>
         <li><a href="../blog.html">Blog</a></li>
       </ul>
@@ -23,8 +23,12 @@
     <article class="post-layout">
 
       <header class="post-header">
-        <h1>Project Title</h1>
-        <p class="post-meta"><strong>Role:</strong> Gameplay Programmer &nbsp;·&nbsp; <strong>Tech:</strong> C++, Unreal Engine 5</p>
+        <h1>Light Of My Life</h1>
+        <p class="post-meta">
+            <strong>Role:</strong> Gameplay Programmer &nbsp;·&nbsp;
+            <strong>Tech:</strong> C#, Unity &nbsp;·&nbsp;
+            <strong>Team Size:</strong> 2
+        </p>
       </header>
 
       <div class="post-hero">
@@ -35,30 +39,34 @@
 
       <div class="post-body">
         <h2>Overview</h2>
-        <p>A brief summary of the game, the scope of the project, and your specific technical contribution.</p>
+        <p>A young women tries to protect her little sister from a deranged cult in a world where even the sun isn't safe. Light Of My Life
+          is a interactive narrative game following two sisters in an apocalyptic world, manage inventory, notes, and a full dialogue and choice
+          system as you explore the dangerous surface, facing off against plant creatures and mad cultists.
+          </p>
 
-        <h2>Key Responsibilities</h2>
+        <h2>Main Gameplay Mechanics</h2>
         <ul>
-          <li>Implemented physics-based character controller using C++.</li>
-          <li>Optimized rendering pipeline for 60FPS on target hardware.</li>
-          <li>Developed custom toolset for level designers to script encounters.</li>
+            <li>Dialogue System, with cinematics, dialogue choices, and affected character dialogue, for cutscenes, interactable objects in scene
+            or general conversations with characters.</li>
+            <li>Resident Evil inspired tetris-grid item inventory system, different sized items that take up varied amounts of space. Crafting menu for
+            combining items, and a sister inventory to transfer items between them.</li>
+            <li>Interaction system that handles all systems within the game, pickups, notes, dialogue, moveable objects, doors, drawers, puzzles.</li>
+            <li>Save System with different save slots, manual and autosaving with in world save interactions</li>
         </ul>
 
         <h2>Technical Challenges</h2>
-        <p>Describe a specific technical hurdle (e.g., memory management, pathfinding AI, network synchronization) and how you solved it.</p>
-
-        <blockquote>
-          "Highlight a key metric or outcome, such as reducing load times by 40% or implementing a complex systemic animation graph."
-        </blockquote>
+        <p>The save system was definitely the most challenging aspect of the project, having to capture all the necessary data to storage, and then to
+          reload, or load a save to the point where the player last saved. Keeping track of the inventories, notes, progression variables and more,
+          whilst also making sure interactions in the level also loaded to the correct state.</p>
 
         <h2>Project Links</h2>
         <p>
-          <a href="#">View Source on GitHub →</a>
+          <a href="https://atrs.itch.io/light-of-my-life">View Game on Itch.io →</a>
         </p>
       </div>
 
       <p style="margin-top:3rem;padding-top:2rem;border-top:1px solid var(--border);">
-        <a href="../index.html">← Back to Work</a>
+        <a href="../index.html">← Back to Projects</a>
       </p>
 
     </article>

@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Project Title — Your Name</title>
+  <title>House Of Chaos — Sasha Robbins</title>
   <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
 
   <nav>
     <div class="nav-inner">
-      <a href="../index.html" class="nav-logo">Your Name</a>
+      <a href="../index.html" class="nav-logo">Sasha Robbins</a>
       <ul class="nav-links">
-        <li><a href="../index.html">Work</a></li>
+        <li><a href="../index.html">Projects</a></li>
         <li><a href="../about.html">About</a></li>
         <li><a href="../blog.html">Blog</a></li>
       </ul>
@@ -23,8 +23,12 @@
     <article class="post-layout">
 
       <header class="post-header">
-        <h1>Project Title</h1>
-        <p class="post-meta"><strong>Role:</strong> Gameplay Programmer &nbsp;·&nbsp; <strong>Tech:</strong> C++, Unreal Engine 5</p>
+        <h1>House Of Chaos</h1>
+        <p class="post-meta">
+            <strong>Role:</strong> Gameplay Programmer, Designer <br>&amp; 2D Art &nbsp;·&nbsp; 
+            <strong>Tech:</strong> C#, Unity 
+            <strong>Team Size:</strong> 2 
+        </p>
       </header>
 
       <div class="post-hero">
@@ -35,30 +39,33 @@
 
       <div class="post-body">
         <h2>Overview</h2>
-        <p>A brief summary of the game, the scope of the project, and your specific technical contribution.</p>
+        <p>HoC is a Single-player Strategy card game where action cards change how the game is played, timebombs,
+          shields and reveals are just a few of the different cards that you encounter, with wild cards being the most powerful in the deck,
+          changing the win conditions of the game such as having the most cards or stealing the most cards</p>
 
-        <h2>Key Responsibilities</h2>
+        <h2>Main Gameplay Mechanics</h2>
         <ul>
-          <li>Implemented physics-based character controller using C++.</li>
-          <li>Optimized rendering pipeline for 60FPS on target hardware.</li>
-          <li>Developed custom toolset for level designers to script encounters.</li>
+            <li>Full randomised deck and shuffle system for the cards; Randomly chooses a selection of cards to create a deck of 52,
+                also shuffles the deck for true randomness..</li>
+            <li>Card Class system with individual actions; Variety of different cards that cause actions within the game,
+                some causing the win condition for the game to change, others more tailored for player vs player scenarios such as
+                Reverse Text and Reveal Hand.</li>
+            <li>Turn system against computer; Not a very intelligent computer, but it will take turns, pick up and place cards. </li>
         </ul>
 
         <h2>Technical Challenges</h2>
-        <p>Describe a specific technical hurdle (e.g., memory management, pathfinding AI, network synchronization) and how you solved it.</p>
-
-        <blockquote>
-          "Highlight a key metric or outcome, such as reducing load times by 40% or implementing a complex systemic animation graph."
-        </blockquote>
+        <p>Whilst it would have been the computer you play against, I had run out of time to create an intelligent computer, and so the most
+          technically challenging aspect was the unique cards in the deck, as they all had to be sorted based on affecting the player or the
+          computer, as well as the entire game itself, with win conditions and rules that could be added and removed as the game went on.</p>
 
         <h2>Project Links</h2>
         <p>
-          <a href="#">View Source on GitHub →</a>
+            <a href="https://atrs.itch.io/house-of-chaos">View Game on Itch.io →</a>
         </p>
       </div>
 
       <p style="margin-top:3rem;padding-top:2rem;border-top:1px solid var(--border);">
-        <a href="../index.html">← Back to Work</a>
+        <a href="../index.html">← Back to Projects</a>
       </p>
 
     </article>

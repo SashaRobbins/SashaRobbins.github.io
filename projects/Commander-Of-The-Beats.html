@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Project Title — Your Name</title>
+  <title>Commander Of The Beats — Sasha Robbins</title>
   <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
 
   <nav>
     <div class="nav-inner">
-      <a href="../index.html" class="nav-logo">Your Name</a>
+      <a href="../index.html" class="nav-logo">Sasha Robbins</a>
       <ul class="nav-links">
-        <li><a href="../index.html">Work</a></li>
+        <li><a href="../index.html">Projects</a></li>
         <li><a href="../about.html">About</a></li>
         <li><a href="../blog.html">Blog</a></li>
       </ul>
@@ -23,8 +23,12 @@
     <article class="post-layout">
 
       <header class="post-header">
-        <h1>Project Title</h1>
-        <p class="post-meta"><strong>Role:</strong> Gameplay Programmer &nbsp;·&nbsp; <strong>Tech:</strong> C++, Unreal Engine 5</p>
+        <h1>Commander Of The Beats</h1>
+        <p class="post-meta">
+            <strong>Role:</strong> Gameplay Programmer <br>&amp; Level Design &nbsp;·&nbsp;
+            <strong>Tech:</strong> C#, Unity &nbsp;·&nbsp;
+            <strong>Team Size:</strong> 4
+        </p>
       </header>
 
       <div class="post-hero">
@@ -35,30 +39,26 @@
 
       <div class="post-body">
         <h2>Overview</h2>
-        <p>A brief summary of the game, the scope of the project, and your specific technical contribution.</p>
+        <p>Commander Of The Beats is a Single-player VR Rhythm game where you as the drummer boy must copy the beat that gets displayed.
+          There are three different segments on the drum for which you have to hit on time with the corresponding note on the screen.
+          Play between two game modes to decide the tempo of the beats and try and get the highest score.</p>
 
-        <h2>Key Responsibilities</h2>
+        <h2>Main Gameplay Mechanics</h2>
         <ul>
-          <li>Implemented physics-based character controller using C++.</li>
-          <li>Optimized rendering pipeline for 60FPS on target hardware.</li>
-          <li>Developed custom toolset for level designers to script encounters.</li>
+            <li>Real time synced rhythm player; Beats linked up to a real-time 4 beat tempo, at 60bpm,
+            Difficulty increases to 120bpm for extra challenge. Selection of beat variants randomly chosen.</li>
+            <li>Time synced recorder; Listener to score player on beat timings, individual listeners for each bar for time perfect comparisons.</li>
         </ul>
 
         <h2>Technical Challenges</h2>
-        <p>Describe a specific technical hurdle (e.g., memory management, pathfinding AI, network synchronization) and how you solved it.</p>
+        <p>The biggest challenge of this prototype project was definitely the VR aspect. Its something i've never tried to do before
+          and tying the whole game around that was both interesting and challenging, especially when so many problems arrived purely
+          from the controllers being so unique to deal with.</p>
 
-        <blockquote>
-          "Highlight a key metric or outcome, such as reducing load times by 40% or implementing a complex systemic animation graph."
-        </blockquote>
-
-        <h2>Project Links</h2>
-        <p>
-          <a href="#">View Source on GitHub →</a>
-        </p>
       </div>
 
       <p style="margin-top:3rem;padding-top:2rem;border-top:1px solid var(--border);">
-        <a href="../index.html">← Back to Work</a>
+        <a href="../index.html">← Back to Projects</a>
       </p>
 
     </article>
