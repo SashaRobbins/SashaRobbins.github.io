@@ -219,6 +219,11 @@ nav {
   border-radius: 2px;
 }
 
+.projects-grid > a {
+  display: flex;
+  flex-direction: column;
+}
+
 /* ── ABOUT PAGE ─────────────────────────────────────────── */
 .about-layout {
   display: grid;
