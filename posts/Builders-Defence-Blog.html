@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ════════════════════════════════════════════════
+       CHANGE: Replace with this post's title
+       ════════════════════════════════════════════════ -->
+  <title>Post Title — Your Name</title>
+  <meta name="description" content="A one-sentence description of this post." />
+
+  <!-- NOTE: if this file is in a /posts/ sub-folder, the path to style.css
+       needs to go up one level: href="../style.css"                       -->
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <!-- ════════════════════════════════════════════════
+       NAVIGATION
+       NOTE: links go up one level (../) because this
+       file lives inside the /posts/ folder
+       ════════════════════════════════════════════════ -->
+  <nav>
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo">Your Name</a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Work</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../blog.html" class="active">Blog</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="page">
+    <article class="post-layout">
+
+      <!-- ── POST HEADER ── -->
+      <header class="post-header">
+        <div class="blog-meta">
+          <!-- CHANGE: Category label -->
+          <span class="blog-category">Design</span>
+        </div>
+
+        <!-- CHANGE: Post title -->
+        <h1>Your Blog Post Title Goes Here</h1>
+
+        <!-- CHANGE: Date published -->
+        <p class="post-meta">12 June 2025</p>
+      </header>
+
+      <!-- ── HERO IMAGE ──
+           CHANGE: Replace with your post's main image.
+           Put the image in the /images/ folder in your repo,
+           then update the src path below.
+           If you don't have a hero image, delete this whole block.
+      -->
+      <div class="post-hero">
+        <!-- <img src="../images/post1-hero.jpg" alt="Description of image" /> -->
+        <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:.8rem;color:#6B6860;">
+          Optional: add a hero image here
+        </div>
+      </div>
+
+      <!-- ════════════════════════════════════════════════
+           POST BODY
+           CHANGE: Replace all the text below with your post content.
+
+           FORMATTING GUIDE:
+           <p>          — a paragraph of text
+           <h2>         — a section heading (large)
+           <h3>         — a sub-section heading (smaller)
+           <ul><li>     — bullet list
+           <ol><li>     — numbered list
+           <blockquote> — a pull quote / highlighted quote
+           <strong>     — bold text
+           <em>         — italic text
+           <a href="">  — a hyperlink
+           ════════════════════════════════════════════════ -->
+      <div class="post-body">
+
+        <p>
+          This is the opening paragraph of your blog post. Write something
+          compelling that draws the reader in and sets up what the post is about.
+        </p>
+
+        <p>
+          Continue with your second paragraph here. You can write as many
+          paragraphs as you need — just copy and paste a &lt;p&gt;&lt;/p&gt; block.
+        </p>
+
+        <h2>A Section Heading</h2>
+
+        <p>
+          Use headings to break up longer posts into sections. This makes
+          them much easier to read.
+        </p>
+
+        <blockquote>
+          This is a pull quote — great for highlighting a key idea or
+          memorable sentence from your post.
+        </blockquote>
+
+        <p>
+          Keep writing here. Add as many paragraphs, headings, and lists
+          as your post needs.
+        </p>
+
+        <ul>
+          <li>This is a bullet point</li>
+          <li>Another bullet point</li>
+          <li>And one more</li>
+        </ul>
+
+        <p>
+          Closing thoughts go here. Wrap up the post with a conclusion or
+          a call to action.
+        </p>
+
+      </div><!-- end .post-body -->
+
+      <!-- ── BACK LINK ── -->
+      <p style="margin-top:3rem;padding-top:2rem;border-top:1px solid var(--border);">
+        <a href="../blog.html">← Back to Blog</a>
+      </p>
+
+    </article>
+  </main>
+
+  <!-- ════════════════════════════════════════════════
+       FOOTER — CHANGE email and social links
+       ════════════════════════════════════════════════ -->
+  <footer>
+    <p>
+      <a href="mailto:you@email.com">you@email.com</a>
+      &nbsp;·&nbsp;
+      <a href="https://linkedin.com/in/yourhandle" target="_blank">LinkedIn</a>
+      &nbsp;·&nbsp;
+      <a href="https://instagram.com/yourhandle" target="_blank">Instagram</a>
+    </p>
+    <p style="margin-top:.5rem;">&copy; 2025 Your Name</p>
+  </footer>
+
+</body>
+</html>
