@@ -430,8 +430,4 @@ footer a:hover { color: var(--accent); opacity: 1; }
     gap: 1rem;
   }
   .blog-item .blog-thumb { aspect-ratio: 16/9; }
-
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
 }
