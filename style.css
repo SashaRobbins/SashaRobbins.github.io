@@ -143,7 +143,6 @@ nav {
 
 /* ── PROJECT GRID ───────────────────────────────────────── */
 .projects-grid {
-  align-items: start;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 2rem;
@@ -152,6 +151,7 @@ nav {
 .project-card {
   display: flex;
   flex-direction: column;
+  flex: 1;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 4px;
@@ -222,6 +222,7 @@ nav {
 .projects-grid > a {
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 /* ── ABOUT PAGE ─────────────────────────────────────────── */
