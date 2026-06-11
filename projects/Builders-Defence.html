@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Project Title — Your Name</title>
+  <title>Builder's Defence — Sasha Robbins</title>
   <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
 
   <nav>
     <div class="nav-inner">
-      <a href="../index.html" class="nav-logo">Your Name</a>
+      <a href="../index.html" class="nav-logo">Sasha Robbins</a>
       <ul class="nav-links">
-        <li><a href="../index.html">Work</a></li>
+        <li><a href="../index.html">Projects</a></li>
         <li><a href="../about.html">About</a></li>
         <li><a href="../blog.html">Blog</a></li>
       </ul>
@@ -23,8 +23,11 @@
     <article class="post-layout">
 
       <header class="post-header">
-        <h1>Project Title</h1>
-        <p class="post-meta"><strong>Role:</strong> Gameplay Programmer &nbsp;·&nbsp; <strong>Tech:</strong> C++, Unreal Engine 5</p>
+        <h1>Builder's Defence</h1>
+        <p class="post-meta">
+            <strong>Role:</strong> Gameplay Programmer, Designer &amp; 2D Art &nbsp;·&nbsp; 
+            <strong>Tech:</strong> C#, Unity &nbsp;·&nbsp; 
+            <strong>Team Size:</strong> 1
       </header>
 
       <div class="post-hero">
@@ -35,30 +38,34 @@
 
       <div class="post-body">
         <h2>Overview</h2>
-        <p>A brief summary of the game, the scope of the project, and your specific technical contribution.</p>
+        <p>Builder's Defence is a Single-player top down open tower defence game, where you build resources and defences,
+          all to protect your HQ. Face endless waves of enemies that spawn from all directions,
+          choosing specific defences to face off enemies that are immune to other types of defences.</p>
 
-        <h2>Key Responsibilities</h2>
+        <h2>Main Gameplay Mechanics</h2>
         <ul>
-          <li>Implemented physics-based character controller using C++.</li>
-          <li>Optimized rendering pipeline for 60FPS on target hardware.</li>
-          <li>Developed custom toolset for level designers to script encounters.</li>
+          <li>Random wave enemy spawns; Makes it so every wave in a new game is rarely the same,
+              enemies are assigned a value and a list of enemies is generated based on wave number and value of enemy.</li>
+          <li>Wave system; Goes through list of enemies to spawn at random location around HQ, can be sped up based on game speed set by player</li>
+          <li>Building grid system; World grid to place buildings on, confines within world boundaries and blocks clipping of buildings</li>
+          <li>Building stats; Upgradable buildings that have a stat increase based on building type, either generating more resources, or doing more damage, etc.</li>
+          <li>Status Effects; Special towers that deal status effects to enemies, Ice tower makes enemies move and attack slower,
+              Poison spell deals damage over time, Bomb tower deals splash damage to numerous enemies in the area.</li>
         </ul>
 
         <h2>Technical Challenges</h2>
-        <p>Describe a specific technical hurdle (e.g., memory management, pathfinding AI, network synchronization) and how you solved it.</p>
-
-        <blockquote>
-          "Highlight a key metric or outcome, such as reducing load times by 40% or implementing a complex systemic animation graph."
-        </blockquote>
+        <p>The Grid System and Building placements was the most challenging factor, making sure the buildings were contained within the world, and that they
+           couldn't overlap with the other buildings. Since there was no set path for the enemies to follow to get the target building, players have to plan out their
+           defences in a full circle around the building.</p>
 
         <h2>Project Links</h2>
         <p>
-          <a href="#">View Source on GitHub →</a>
+          <a href="https://atrs.itch.io/builders-defence">View Game on Itch.io →</a>
         </p>
       </div>
 
       <p style="margin-top:3rem;padding-top:2rem;border-top:1px solid var(--border);">
-        <a href="../index.html">← Back to Work</a>
+        <a href="../index.html">← Back to Projects</a>
       </p>
 
     </article>
