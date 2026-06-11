@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Project Title — Your Name</title>
+  <title>Lavanation — Sasha Robbins</title>
   <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
 
   <nav>
     <div class="nav-inner">
-      <a href="../index.html" class="nav-logo">Your Name</a>
+      <a href="../index.html" class="nav-logo">Sasha Robbins</a>
       <ul class="nav-links">
-        <li><a href="../index.html">Work</a></li>
+        <li><a href="../index.html">Projects</a></li>
         <li><a href="../about.html">About</a></li>
         <li><a href="../blog.html">Blog</a></li>
       </ul>
@@ -23,8 +23,12 @@
     <article class="post-layout">
 
       <header class="post-header">
-        <h1>Project Title</h1>
-        <p class="post-meta"><strong>Role:</strong> Gameplay Programmer &nbsp;·&nbsp; <strong>Tech:</strong> C++, Unreal Engine 5</p>
+        <h1>Lavanation</h1>
+        <p class="post-meta">
+            <strong>Role:</strong> Gameplay Programmer, Designer &amp; 2D Art &nbsp;·&nbsp; 
+            <strong>Tech:</strong> C#, Unity &nbsp;·&nbsp; 
+            <strong>Team Size:</strong> 1
+        </p>
       </header>
 
       <div class="post-hero">
@@ -35,30 +39,30 @@
 
       <div class="post-body">
         <h2>Overview</h2>
-        <p>A brief summary of the game, the scope of the project, and your specific technical contribution.</p>
+        <p>Lavanation is a Single-player casual action game where you're tasked to eat resources, maintain your depleting heat core,
+          and grow to a point where you can turn the entire world into a lava filled haven. The procedurally generated world provides
+          3 different biomes; Grassland, Snow, and Magma. Grassland is a neutral biome that doesn't has a steady stream of resources
+          and no extra bonus' to the player. Snow biome is a harsh but rewarding biome that makes you lose heat quicker at the reward
+          of growing larger much quicker. The Magma biome is the homeland of the lava creature, you can move much faster but resources are scarce.
+          As you grow larger, you are able to take over more biomes and turn them into magma before eventually turning the whole world to magma.</p>
 
-        <h2>Key Responsibilities</h2>
+        <h2>Main Gameplay Mechanics</h2>
         <ul>
-          <li>Implemented physics-based character controller using C++.</li>
-          <li>Optimized rendering pipeline for 60FPS on target hardware.</li>
-          <li>Developed custom toolset for level designers to script encounters.</li>
+          <li>Procedural generated Perlin Noise world; Uses a Perlin Noise function to generate a unique world every time a new world is created,
+            utilises Unity Tile map for efficiency of visualising the biomes</li>
+          <li>Dynamic updatable tile-map; Logic that allows the tile map to update whenever creature gets larger, also used at end game for animation and updating all tiles.</li>
+          <li>Dynamic object spawner; Objects spawned dependant on creature size, rate at which they are spawned affected by biome player is stood in.</li>
         </ul>
 
         <h2>Technical Challenges</h2>
-        <p>Describe a specific technical hurdle (e.g., memory management, pathfinding AI, network synchronization) and how you solved it.</p>
+        <p>Making a procedural world built with perlin noise, the perlin noise was used to decide the biome tile, the world made up using the Unity tile system
+           that can get changed by the player as the game progresses. Each playthrough is an entirely new world with the perlin noise so visually each
+           playthrough would be different.</p>
 
-        <blockquote>
-          "Highlight a key metric or outcome, such as reducing load times by 40% or implementing a complex systemic animation graph."
-        </blockquote>
-
-        <h2>Project Links</h2>
-        <p>
-          <a href="#">View Source on GitHub →</a>
-        </p>
       </div>
 
       <p style="margin-top:3rem;padding-top:2rem;border-top:1px solid var(--border);">
-        <a href="../index.html">← Back to Work</a>
+        <a href="../index.html">← Back to Projects</a>
       </p>
 
     </article>
