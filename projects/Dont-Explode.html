@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Project Title — Your Name</title>
+  <title>Don't Explode — Sasha Robbins</title>
   <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
 
   <nav>
     <div class="nav-inner">
-      <a href="../index.html" class="nav-logo">Your Name</a>
+      <a href="../index.html" class="nav-logo">Sasha Robbins</a>
       <ul class="nav-links">
-        <li><a href="../index.html">Work</a></li>
+        <li><a href="../index.html">Projects</a></li>
         <li><a href="../about.html">About</a></li>
         <li><a href="../blog.html">Blog</a></li>
       </ul>
@@ -23,8 +23,12 @@
     <article class="post-layout">
 
       <header class="post-header">
-        <h1>Project Title</h1>
-        <p class="post-meta"><strong>Role:</strong> Gameplay Programmer &nbsp;·&nbsp; <strong>Tech:</strong> C++, Unreal Engine 5</p>
+        <h1>Don't Explode</h1>
+        <p class="post-meta">
+            <strong>Role:</strong> Gameplay Programmer &amp; Designer &nbsp;·&nbsp; 
+            <strong>Tech:</strong> C#, Unity &nbsp;·&nbsp; 
+            <strong>Team Size:</strong> 2
+        </p>
       </header>
 
       <div class="post-hero">
@@ -35,30 +39,27 @@
 
       <div class="post-body">
         <h2>Overview</h2>
-        <p>A brief summary of the game, the scope of the project, and your specific technical contribution.</p>
+        <p>Don't Explode is a Single-player puzzle game featuring four randomly repeating puzzles; The maze - by only moving left and right,
+          move the ball along the maze to the green exit, Simon says, a novel classic puzzle game where you repeat the colour combination
+          to gain more time, Timer puzzle - start and stop a timer where a specific number is present anywhere on the clock.
+          Number puzzle - Press all the numbers from 1-10.</p>
 
-        <h2>Key Responsibilities</h2>
+        <h2>Main Gameplay Mechanics</h2>
         <ul>
-          <li>Implemented physics-based character controller using C++.</li>
-          <li>Optimized rendering pipeline for 60FPS on target hardware.</li>
-          <li>Developed custom toolset for level designers to script encounters.</li>
+          <li>Draggable and interactive puzzles; Grabbable puzzles that could be picked up and dropped around the screen.
+            Unique puzzles for variance and range of difficulty</li>
+          <li>Object spawner; Randomly chooses an object to spawn as long as it's not pre-existing at the current time of trying to spawn object</li>
         </ul>
 
         <h2>Technical Challenges</h2>
-        <p>Describe a specific technical hurdle (e.g., memory management, pathfinding AI, network synchronization) and how you solved it.</p>
+        <p>The interactive puzzles that also allowed you to move them around. Trying to make sure that if puzzles overlap that you only interact with one of them.
+           Then there is the indiviudal puzzles themselves, while some of them are easier than others, the maze was probably the most challenging as it had all the
+           moving parts within the puzzle object.</p>
 
-        <blockquote>
-          "Highlight a key metric or outcome, such as reducing load times by 40% or implementing a complex systemic animation graph."
-        </blockquote>
-
-        <h2>Project Links</h2>
-        <p>
-          <a href="#">View Source on GitHub →</a>
-        </p>
       </div>
 
       <p style="margin-top:3rem;padding-top:2rem;border-top:1px solid var(--border);">
-        <a href="../index.html">← Back to Work</a>
+        <a href="../index.html">← Back to Projects</a>
       </p>
 
     </article>
