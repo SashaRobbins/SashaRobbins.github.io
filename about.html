@@ -3,54 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- CHANGE: Update the title -->
   <title>About — Sasha Robbins</title>
   <meta name="description" content="About Sasha Robbins — who I am and what I do." />
 
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <!-- ════════════════════════════════════════════════
-       NAVIGATION — same on every page
-       CHANGE: Replace "Your Name" with your actual name
-       ════════════════════════════════════════════════ -->
   <nav>
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">Sasha Robbins</a>
       <ul class="nav-links">
         <li><a href="index.html">Projects</a></li>
         <li><a href="about.html" class="active">About</a></li>
-        <li><a href="blog.html">Blog</a></li>
       </ul>
     </div>
   </nav>
 
   <main class="page">
-
-    <!-- ════════════════════════════════════════════════
-         PAGE HEADER
-         CHANGE: Update the heading and subtitle
-         ════════════════════════════════════════════════ -->
     <header class="page-header">
       <span class="label">About</span>
       <h1>Hello, I'm Sasha Robbins.</h1>
-      <!-- CHANGE: One-line tagline -->
       <p>Game Programmer &amp; Designer based in Reading.</p>
     </header>
-
-    <!-- ════════════════════════════════════════════════
-         ABOUT LAYOUT — photo on left, bio on right
-         ════════════════════════════════════════════════ -->
     <div class="about-layout">
-
-      <!-- ── PHOTO ──
-           CHANGE: Replace the placeholder with your photo.
-           1. Upload your photo to the repo (e.g. images/me.jpg)
-           2. Replace the placeholder div with:
-              <img src="images/me.jpg" alt="Your Name" />
-      -->
       <div style="display:flex; flex-direction:column; gap:1rem;">
         <div class="about-photo">
           <img src="assets/images/Personal Image.png" alt="Sasha Robbins" />
@@ -61,38 +36,23 @@
         </div>
       </div>
 
-      <!-- ── BIO ── -->
       <div class="about-content">
-
-        <!-- CHANGE: Replace with your own heading -->
         <h2>A little about me.</h2>
-
-        <!-- CHANGE: Replace ALL of the paragraphs below with your own bio.
-             Keep the <p> tags — just replace the text inside them.
-             Add more <p> blocks if you need more paragraphs. -->
-
         <p>
           From 2023 - 2026 I studied Games Development at Bath Spa University, designing and building
           game prototypes from the ground up, both inside and outside of university partaking in game jams
           such as the GMTK 2025 game jam.
         </p>
-
         <p>
           I am proficient in Unity with C#, but I have also created some projects in Unreal with Blueprints,
           as well as Roblox Studio with Lua. Throughout my degree I have worked on 2D and 3D games,
           and also a VR prototype project. My final year group project "Light Of My Life" was developed in Unity
           where I was the lead and sole programmer across the full project.
         </p>
-
         <p>
           When I'm not working, you'll find me spiking the ball in Volleyball or enjoying the F1 Grand Prix on the weekend.
         </p>
 
-        <!-- ════════════════════════════════════════════════
-             SKILLS / SERVICES LIST
-             CHANGE: Replace each skill-item with your own
-             Add or remove <div class="skill-item"> as needed
-             ════════════════════════════════════════════════ -->
         <div class="skills-grid">
           <span class="label" style="grid-column:1/-1;margin-bottom:.25rem;">Technical Skills</span>
           <div class="skill-item">Unity</div>
@@ -109,23 +69,16 @@
           <div class="skill-item">VR Prototyping</div>
         </div>
 
-        <!-- ════════════════════════════════════════════════
-             CONTACT LINK
-             CHANGE: Replace with your email address
-             ════════════════════════════════════════════════ -->
         <p style="margin-top:2.5rem;">
           Currently looking for my first role in the industry.
           <a href="mailto:srobbins.gamedev@hotmail.com">Let's talk →</a>
         </p>
 
-      </div><!-- end .about-content -->
-    </div><!-- end .about-layout -->
+      </div>
+    </div>
 
   </main>
 
-  <!-- ════════════════════════════════════════════════
-       FOOTER — CHANGE email and social links
-       ════════════════════════════════════════════════ -->
   <footer>
     <p>
       <a href="mailto:srobbins.gamedev@hotmail.com">Email</a>
